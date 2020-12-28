@@ -1,20 +1,22 @@
 import random
 
-random_number= random.randint(1,10) # number 1 - 10
+random_number = random.randint(1,10) # number 1 - 10  
 
-guess = input("Pikc a number from 1 to 10:  ")
+guess = input("Pick a number from 1 to 10:  ")  
 
 while True:
-    guess = input("Pick a number from 1 to 10:  ")
-    guess = int(guess)
+    guess = input("Pick a number from 1 to 10:  ")  
+    guess = int(guess) 
     
-    if guess < random_number:
+    if guess < random_number:  
         print("TOO LOW")
+        
     elif guess > random_number:
         print("TOO HIGH")
+        
     else:
         print("YOU WON!!!!")
-        play_again = input("Do you want to play again? (y/n) ")
+        play_again = input("Do you want to play again? (y/n) ") y - n
         if play_again == "y":
             random_number = random.randint(1,10)  # numbers 1 - 10
             guess = None
@@ -22,4 +24,4 @@ while True:
             print("Thank you for playing!!")
             break
 
-print(random_number)
+print(random_number)    # print()
