@@ -38,3 +38,6 @@ elif player == "scissors":
         print("computer wins")
 else:
     print("Please enter a valid move")
+
+print(f"FINAL SCORES... Player: {player_wins} computer_score...{computer_wins}")
+    
